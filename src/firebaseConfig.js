@@ -3,14 +3,14 @@ import { getFirestore } from "firebase/firestore";
 
 // Unoda Expo app-la irukka athe config inga podu
 const firebaseConfig = {
-    apiKey: "AIzaSyBU9R2xrYjBPF2mla6JQ5LQX7xPatBpdHg",
-    authDomain: "waterpurifierapp-b160d.firebaseapp.com",
-    projectId: "waterpurifierapp-b160d",
-    storageBucket: "waterpurifierapp-b160d.firebasestorage.app",
-    messagingSenderId: "791528105272",
-    appId: "1:791528105272:web:ab0ba79870ceeab6958dcd",
-    measurementId: "G-K3T01NW5CE"
-  };
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
+};
   
 
 const app = initializeApp(firebaseConfig);
